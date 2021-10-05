@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Stylesheet-->
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Assignments</title>
+</head>
+<body onLoad = populateCoursesTable()>
+    <!-- Header -->
+    <div class="header">
+        <a href="main_page.html" class="logo">Coding School</a>
+        <div class="header-right">
+            <a href="courses.html">Courses</a>
+            <a href="assignments.html">Assignments</a>
+            <a href="students.html">Students</a>
+            <a href="trainers.html">Trainers</a>
+            <a href="#about">About</a>
+        </div>
+    </div>
+    <div>
+        <h1>Assignments</h1>
+    </div>
+    <!--  Dividing page in a row -->
+    <div class="row">
+        <!-- Dividing page in 2 columns -->
+        <div class="column">
+        <!-- Courses Table -->
+            <table class="courses-table">
+            <thead>
+                <caption>Courses</caption>
+                <tr>
+                    <th>Language</th>
+                    <th>Duration</th>
+                    <th>Title</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Will be filled with dummy data though javascript -->
+            </tbody>
+        </table>
+        <div>
+        <!-- Dividing page in 2 columns -->
+        <div class="column">
+            <!-- Assignments Table -->
+            <table class="assignments-table">
+                <thead>
+                    <caption>Assignments</caption>
+                    <tr>
+                        <th>Course Title</th>
+                        <th>Assignment Title</th>
+                        <th>Description</th>
+                        <th>Deadline</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Will be filled with user input though javascript -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- Script -->
+    <script type='text/javascript' src="/scripts/assignments_script.js"></script>
+</body>
+</html>

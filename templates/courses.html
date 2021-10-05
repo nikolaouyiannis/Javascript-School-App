@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Stylesheet-->
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Courses</title>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <a href="main_page.html" class="logo">Coding School</a>
+        <div class="header-right">
+            <a href="courses.html">Courses</a>
+            <a href="assignments.html">Assignments</a>
+            <a href="students.html">Students</a>
+            <a href="trainers.html">Trainers</a>
+            <a href="#about">About</a>
+        </div>
+    </div>
+    <div>
+        <h1>Courses</h1>
+    </div>
+    <!--  Dividing page in a row -->
+    <div class="row">
+        <!-- Dividing page in 2 columns -->
+        <div class="column">
+            <!-- Course Form -->
+            <form onsubmit="event.preventDefault();onFormSubmit();">
+                <div>
+                    <label for="lang"><span>Language</span></label>
+                    <select name="lang" id="lang">
+                        <option value="C#">C#</option>
+                        <option value="Java">Java</option>
+                        <option value="Javascript">Javascript</option>
+                        <option value="Python">Python</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="duration"><span>Duration</span></label>
+                    <select name="duration" id="duration">
+                        <option value="Full Time">Full Time</option>
+                        <option value="Part Time">Part Time</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="title"><span>Title<abbr title="Required field" aria-label="required">*</abbr></span></label>
+                    <input type="text" id="title" placeholder="e.g. CB13CSFT" required>
+                </div>
+                    <label for="descr"><span>Description<abbr title="Required field" aria-label="required">*</abbr></span></label>
+                    <input type="text" id="descr" placeholder="Full Time" required>
+                <div>
+                </div>
+                <div class="form-action-buttons">
+                    <input type="submit" class="btn-submit" value="Submit">
+                </div>
+            </form>
+        </div>
+        <!-- Dividing page in 2 columns -->
+        <div class="column">
+            <!-- Course Table -->
+            <table class="courses-table">
+                <thead>
+                    <tr>
+                        <th>Course Language</th>
+                        <th>Course Duration</th>
+                        <th>Course Title</th>
+                        <th>Course Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Will be filled with user input though javascript -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <br>
+    <!-- Footer -->
+    <div class="footer">
+        <p>Copyrights</p>
+    </div>
+    <!-- Script -->
+    <script type='text/javascript' src="/scripts/courses_script.js"></script>
+</body>
+</html>

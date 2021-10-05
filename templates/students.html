@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Stylesheet-->
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Students</title>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <a href="main_page.html" class="logo">Coding School</a>
+        <div class="header-right">
+            <a href="courses.html">Courses</a>
+            <a href="assignments.html">Assignments</a>
+            <a href="students.html">Students</a>
+            <a href="trainers.html">Trainers</a>
+            <a href="#about">About</a>
+        </div>
+    </div>
+    <div>
+        <h1>Students</h1>
+    </div>
+    <!--  Dividing page in a row -->
+    <div class="row">
+        <!-- Dividing page in 2 columns -->
+        <div class="column">
+            <!-- Student Form -->
+            <form onsubmit="event.preventDefault();onFormSubmit();">
+                <div>
+                    <label for="fname"><span>First Name<abbr title="Required field" aria-label="required">*</span></label>
+                    <input type="text" id="fname" required>
+                </div>
+                <div>
+                    <label for="lname"><span>Last Name<abbr title="Required field" aria-label="required">*</span></label>
+                    <input type="text" id="lname" required>
+                </div>
+                <div>
+                    <label for="birthdate"><span>Birth Date<abbr title="Required field" aria-label="required">*</span></label>
+                    <input type="date" id="birthdate" min="1951-01-01" max="2003-01-01" required>
+                </div>
+                    <label for="fees"><span>Tuition fees</span></label>
+                    <input type="number" id="fees" min="1" max="2500">
+                <div>
+                </div>
+                <div class="form-action-buttons">
+                    <input type="submit" class="btn-submit" value="Submit">
+                </div>
+            </form>
+        </div>
+        <!-- Dividing page in 2 columns -->
+        <div class="column">
+            <!-- Students Table -->
+            <table class="students-table">
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Birth Date</th>
+                        <th>Tuition fees</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Will be filled with user input though javascript -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+        <p>Copyrights</p>
+    </div>
+    <!-- Script -->
+    <script type='text/javascript' src="/scripts/students_script.js"></script>
+</body>
+</html>
